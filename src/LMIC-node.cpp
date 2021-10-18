@@ -849,6 +849,15 @@ void setup()
 
     resetCounter();
 
+    // Serial.print("Disabled Channels: ");
+    // for (int i = 1; i <= 8; i++ ) { //disable channels from 1 to 8
+    //     LMIC_disableChannel(i);
+    //     Serial.print(i);
+    //     Serial.print(", ");
+    // }
+    // Serial.println();
+
+
 //  █ █ █▀▀ █▀▀ █▀▄   █▀▀ █▀█ █▀▄ █▀▀   █▀▀ █▀█ █▀▄
 //  █ █ ▀▀█ █▀▀ █▀▄   █   █ █ █ █ █▀▀   █▀▀ █ █ █ █
 //  ▀▀▀ ▀▀▀ ▀▀▀ ▀ ▀   ▀▀▀ ▀▀▀ ▀▀  ▀▀▀   ▀▀▀ ▀ ▀ ▀▀ 
