@@ -2,7 +2,7 @@
  * 
  *  File:         bsf_ttgo_t_beam_v1.h
  * 
- *  Description:  Board Support File for TTGO T-Beam (aka T22) V1.0.
+ *  Description:  Board Support File for TTGO T-Beam (aka T22) V1.0 and V1.1.
  * 
  *  Copyright:    Copyright (c) 2021 Leonel Lopes Parente
  * 
@@ -12,7 +12,7 @@
  * 
  *  Description:  This board has onboard USB (provided by onboard USB to serial).
  *                It supports automatic firmware upload and serial over USB. 
- *                No onboard display. Optionally an external display con be connected.
+ *                No onboard display. Optionally an external display can be connected.
  *                No onboard user programmable LED. Onboard GPS not used by LMIC-node.
  * 
  *                This board uses an AXP192 power management chip to power
@@ -159,7 +159,7 @@ bool boardInit(InitType initType)
                 // Explicitly set voltages because AXP192 power-on values may be lower.
                 axp.setDCDC1Voltage(3300);  // 3.3V pin
                 axp.setLDO2Voltage (3300);  // LoRa
-                axp.setLDO3Voltage (3000);  // GPS (unknown if this must be 3.0 or 3.3V)                
+                axp.setLDO3Voltage (3300);  // GPS                
             }
             break;
 
